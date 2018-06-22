@@ -1,0 +1,5 @@
+ADD_LIBRARY(MyStaticLib STATIC student.cpp)
+SET(APP_EXE demo)
+ADD_EXECUTABLE(${APP_EXE} demo.cpp)
+TARGET_LINK_LIBRARIES(${APP_EXE} MyStaticLib)
+cmake_minimum_required(VERSION 2.8)
